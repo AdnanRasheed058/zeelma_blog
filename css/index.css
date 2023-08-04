@@ -1,0 +1,522 @@
+* {
+    font-family: "MetropolisRegular";
+  }
+  
+  :root {
+    --primary: #E8E8E8;
+    --secondary: #83A0BF;
+    --font-family: "MetropolisRegular";
+  }
+  
+  .color {
+    background-color: #E8E8E8;
+  }
+  
+  
+  
+  /* Nav-Bar1-Header */
+  
+  .navbar {
+    margin-bottom: 0 !important;
+    background-color: var(--primary);
+  }
+  
+  .navbar-toggler-icon {
+    width: 20px !important;
+    height: 12px !important;
+  }
+  
+  
+  /* Sidebar */
+  
+  
+  /*--====== Global Variables ======--*/
+  :root {
+    --bg-color: #13131f;
+    --bg-color-2: #161623;
+    --text-color: #a9afc3;
+  }
+  
+  /*--====== Sidebar ======--*/
+  #sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    max-width: 300px;
+    width: 80%;
+    height: 100%;
+    background-color: white;
+    box-shadow: 0 10px 20px -4px #000;
+    overflow-x: hidden;
+    overflow-y: auto;
+    pointer-events: none;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(-100%);
+    transition: opacity 0.3s ease, visibility 0.2s ease, transform 0.3s ease;
+  }
+  
+  #sidebar.show {
+    pointer-events: all;
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+  }
+  
+  .sidebar_content {
+    padding: 0.8rem 0;
+    pointer-events: none;
+  }
+  
+  .sidebar_content a {
+    pointer-events: all;
+  }
+  
+  .sidebar_body {
+    padding: 12px;
+    border-top: 1px dashed var(--text-color);
+    border-bottom: 1px dashed var(--text-color);
+  }
+  
+  .sidebar_body .top-features {
+    font-size: 18px;
+  }
+  
+  .sidebar_body .top-features ul li {
+    list-style: square;
+    padding: 8px 0px;
+  }
+  
+  .sidebar_body .top-features ul li a {
+    color: black;
+  }
+  
+  .sidebar_body .features ul li {
+    list-style: square;
+    font-size: 16px;
+    padding: 4px;
+  }
+  
+  .side_navlinks ul {
+    margin-top: 8px !important;
+    display: grid;
+    gap: 1rem;
+  }
+  
+  .side_navlinks li a {
+    color: black;
+    font-size: 18px;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+  }
+  
+  .side_navlinks a:hover {
+    opacity: 1;
+  }
+  
+  
+  .sidebar_foot {
+    padding: 12px;
+    font-size: 18px;
+  }
+  
+  
+  /*---- Sidebar-Toggler ----*/
+  
+  .sidebar_toggler {
+    position: static;
+    left: 1vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    overflow: hidden;
+  }
+  
+  .sidebar_toggler span {
+    font-size: 20px;
+    padding: 4px 8px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    pointer-events: none;
+  }
+  
+  
+  
+  /* login form Bordered form */
+  
+  
+  /* Add a hover effect for buttons */
+  button:hover {
+    opacity: 0.8;
+  }
+  
+  /* Extra style for the cancel button (red) */
+  .cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+  }
+  
+  /* Center the avatar image inside this container */
+  .imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+  }
+  
+  /* Avatar image */
+  .bi-person-fill {
+    border: 2px solid white;
+    border-radius: 60px;
+    padding: 4px;
+    background-color: var(--secondary);
+    color: white;
+  }
+  
+  /* Add padding to containers */
+  .container {
+    padding: 16px;
+  }
+  
+  /* The "Forgot password" text */
+  span.psw {
+    float: right;
+    padding-top: 16px;
+  }
+  
+  /* Change styles for span and cancel button on extra small screens */
+  @media screen and (max-width: 300px) {
+    span.psw {
+      display: block;
+      float: none;
+    }
+  
+    .cancelbtn {
+      width: 100%;
+    }
+  }
+  
+  /* Location */
+  .locationmodal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  
+  .modal-content {
+    width: 500px !important;
+    background-color: #fefefe !important;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+  }
+  
+  .modal-content select {
+    height: 30px;
+    font-weight: bold;
+    font-size: 16px;
+  }
+  
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    opacity: 1 !important;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  #cityImage img {
+    max-width: 200px;
+    max-height: 200px;
+  }
+  
+  
+  /* Registration Form*/
+  
+  
+  /* NavBar2 - Header */
+  
+  .search-bar svg {
+    position: relative;
+    left: 25px;
+    top: 10px;
+  }
+  
+  .search-bar input {
+    border: 2px solid black;
+    padding-left: 30px;
+    color: black;
+    width: 100%;
+    height: 40px;
+    outline: none;
+  }
+  
+  .drop-btn {
+    background-color: var(--secondary) !important;
+    color: white !important;
+    border-radius: 0px !important;
+  }
+  
+  .search-area {
+    margin-top: 18px;
+  }
+  
+  .srch-btn {
+    margin-top: 18px;
+  }
+  
+  .search-btn {
+    font-size: 17px;
+    background-color: var(--secondary);
+    color: white;
+    border: none;
+    padding: 6px 30px;
+  }
+
+
+  /* start body */
+  .first-img-cover{
+    display: flex;
+    justify-content: center;
+  }
+
+  .first-pic{
+    width: 100%;
+    height: 500px;
+    margin: ;
+    position: relative;
+    /* z-index: 1; */
+    background-image: url(../assets/first\ pic.jpg);
+    background-size: cover;
+    border-radius: 5px;
+
+  }
+
+  .first-pic::before{
+    content: "";
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    background-color: #000;
+    opacity: .5;
+    /* z-index: 10; */
+  }
+  .first-heading{
+    position: absolute;
+    top: 20rem;
+    right: rem;
+    margin: 0px 30rem;
+    color: white;
+  }
+  .read-more-btn{
+    position: absolute;
+    top: 30rem;
+    right:44rem;
+    background: none;
+    padding: .5rem  2.5rem;
+    color: white;
+
+  }
+
+  /* pill  */
+
+  .pills{
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+  }
+  .insta, .photo-story, .browse{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ba5d56;
+    margin: 1rem;
+    padding:  0px 1rem;
+    border-radius: 5px;
+
+  }
+  .h-5{
+    margin: 1rem;
+    color: white;
+  }
+
+  /* img card  */
+
+  .img-card{
+    display: flex;
+  }
+  .pic-2nd-cover{
+    width: 80%;
+
+  }
+  .img-card-content{
+    width: 20%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .pic-2nd{
+    width: 100%;
+    height: 50vh;
+
+  }
+  .img-card-about{
+    background-color: #ba5d56;
+    color: white;
+    padding: 0rem 3rem;
+    height: auto;
+  }
+  .man-img{
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    width: 60%;
+    height: 40%;
+    border-radius: 50%;
+  }
+ 
+
+  /* categories  */
+
+  .categories-section{
+    display: flex;
+
+  }
+  .categories-content{
+    width: 80%;
+
+
+  }
+  .categories{
+    width: 20%;
+
+  }
+  .category-btn{
+    border: none;
+    font-size: larger;
+    background-color: #363646;
+    color: white;
+    border-radius: 5px;
+  }
+  .category-items{
+    background-color: #8585b3;
+    color: white;
+    margin-top: .5rem;
+    padding: 0px .5rem;
+    border-radius: 5px;
+  }
+
+  /* social section */
+
+  .social-container{
+    display: flex;
+  }
+  .social-img{
+    display: flex;
+    width: 80%;
+  }
+  .social-imgs{
+    width: 90%;
+    height: 20rem;
+    margin-bottom: 1rem;
+  }
+  .inner-social{
+    /* background-color: #e1d7d6; */
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .socials-icon .bi-facebook{
+    color: blue;
+  }
+  .fb-logo{
+    background-color: blue;
+    padding: rem;
+    
+  }
+
+
+  /* recent posts  */
+
+  .recent-post-container{
+
+  }
+  .recent-post-cards{
+    width: 80%;
+    display: flex;
+  }
+  .recent-posts{
+    width: 20%;
+  }
+  .recent-posts-inner{
+    display: flex;
+  }
+  .recent-posts-img{
+    width: 90%;
+    height: 25rem;
+
+  }
+  .post1-img{
+    width: 25%;
+    height: 3rem;
+    /* margin-top: 1rem; */
+  }
+  .post-1{
+    margin-top: 1rem;
+  }
+  .pagination button{
+    border: none;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+  }
+
+  /* paginantion  */
+
+  .pagination button:hover{
+    background-color: #ba5d56;
+  }
+
+  /* subcribe  */
+
+  .subscribe{
+    background-color: #8d7573;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10rem;
+    margin-bottom: 1rem;
+  }
+  .subs-btn{
+    margin-left: -.5rem;
+    border: none;
+    background-color: #363646;
+    padding: 7.4px 2rem;
+    color: white;
+  }
+  .subscribe-form{
+    margin-left: 3rem;
+  }
+  .subs-email{
+    padding: 7px 20px;
+
+  }
+
+
+  
